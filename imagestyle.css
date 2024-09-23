@@ -1,0 +1,75 @@
+*{margin:0px;
+    padding : 0px;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    font-family: s;}
+    html{
+        background-color: rgba(23, 75, 7, 0.726);
+     color:rgb(0, 0, 0);
+    }
+
+
+.navbar{
+    
+    border-radius: 30px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr 1fr 1fr;
+    padding: 20px; 
+     animation: header 1s ease-in-out;
+
+}
+@keyframes header{
+   0% {
+    transform:translateY(-100%)
+    }
+}
+ a{ text-decoration: none;
+    font-size: 1.9em;
+    color: rgb(255, 255, 255);
+    
+
+ }.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+    max-width: 600px;
+    margin-left: 650px;
+    margin-top: 200px;
+    
+}
+
+.image-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    
+}
+.image-link img:hover {
+    transform: scale(1.05);
+}
+.name{
+    font-family:fantasy;
+    font-size: 100px;
+    animation: fadeIn 8s;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+.container img{
+    height: 300px;
+    width: 300px;
+}
+@media screen and (min-width:900px){
+    .hh h2  {
+        font-size: 70px;
+        
+    }
+}

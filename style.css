@@ -1,0 +1,229 @@
+*{margin:0px;
+    padding : 0px;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    font-family: s;}
+    html{
+        background-color: black;
+     color: aliceblue;
+    }
+
+
+.navbar{
+    border-radius: 30px;
+    height: 100px;
+    color: white;
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr 1fr 1fr;
+    padding: 20px; 
+     animation: header 1s ease-in-out;
+
+}
+@keyframes header{
+   0% {
+    transform:translateY(-100%)
+    }
+}
+ a{ text-decoration: none;
+    font-size: 1.5em;
+    color: aliceblue;
+
+ }
+ button{
+    z-index: -1
+    ; border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+
+ }
+.backvideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 110%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+    filter: brightness(20%);
+    filter: saturate(110%);  
+}
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+.introtext{
+    margin-top: 220px;
+    height: 300vh;
+    width: 300vh;
+    font-size: 3rem;
+    color: transparent;
+    font-weight: 200;
+    background: url(./textimg.jpg);
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    animation: zoomout 10s ease 500ms forwards;
+}
+@keyframes zoomout {
+    from{background-size: 40%;}
+    to{background-size: 10%;}
+}
+.basicpic{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    padding-left: 500px;
+    padding-right: 500px;
+   
+    
+    
+     
+}
+.basicpic img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.basicpic img:hover {
+    transform: scale(1.2);}
+.name{
+    font-family:fantasy;
+    font-size: 100px;
+    animation: fadeIn 8s;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+.quote1{
+    background-color: rgba(76, 127, 172, 0.486);
+    height:250px;
+    border-radius: 30px;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+/* .............................................about page........................................................ */
+.story{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 190px;
+    padding: 80PX;
+    font-style: italic;
+}
+.story span{
+    font-weight: 100;
+    color: aqua;
+}
+.abt {
+    background-color: rgb(173, 216, 229);
+    height: 300px;
+    color: black    ;
+}
+.slide {
+    display: flex;
+    gap: 1rem;
+    max-width: 80rem;
+    padding-left: 250px;
+}
+ .pic {
+    
+    position: relative;
+    
+    width: 6rem;
+    border-radius: 1.2rem;
+    height: 15rem;
+    overflow: hidden;
+    /* background-color: var(--background); */
+    
+    box-shadow: 0 5px 12px rgba(42, 154, 206, 0.842);
+    flex: 0.25;
+}
+
+.pic img {
+    position: relative;
+    height: 20rem;
+    object-fit: cover;   
+    border-radius: 20px; 
+} 
+.pic img{
+    transition:transform 0.5s ease;
+}
+.pic img:hover{
+    transform: scale(1.5);
+}
+.abt button{
+    height: 50px;
+    width: 90px;
+    
+    margin-left: 20px;
+}
+.insta{
+    background-color: rgba(190, 67, 143, 0.651);
+    box-shadow: 0 10px 15px rgba(196, 31, 141, 0.4);
+    
+
+    
+}
+.insta:hover{ transform: scale(1.1);
+
+}
+.wiz{
+    background-color: rgba(87, 194, 45, 0.767);
+    box-shadow: 0 10px 15px rgb(26, 156, 113);
+    
+}
+.wiz:hover{ transform: scale(1.1);
+
+}
+.CONTENT{
+    margin-top: 200px;
+}
+address{
+    margin-left: 20px;
+}
+.backvideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+    filter: brightness(20%);
+    filter: saturate(110%);  
+}
+.ww{background-image: url(./samurai2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+/* ...........................nature.............................................................. */
+.nature{
+    display: flex;
+    padding: 10%;
+    flex-wrap: wrap;
+}
+.nature img{
+    height: 500px;
+    width: 500px;
+    transition: transform 0.3s ease;
+}
+.nature img:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width:500px){
+        .nature {
+            display: flex;
+            flex-direction: row;
+            margin-top: 200px;
+        }
+    }
+    /* @media screen and (min-width:500px){
+        .nature img {
+            
+            height: 200px;
+            width: 200px;
+    }
+} */
